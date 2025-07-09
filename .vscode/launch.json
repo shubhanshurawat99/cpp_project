@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug encrypt_decrypt",
+            "type": "cppvsdbg", // Use "cppdbg" if you're using MinGW instead of MSVC
+            "request": "launch",
+            "program": "${workspaceFolder}/encrypt_decrypt.exe",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build"
+        },
+        {
+            "name": "Debug cryption (standalone)",
+            "type": "cppvsdbg", // Use "cppdbg" for MinGW
+            "request": "launch",
+            "program": "${workspaceFolder}/cryption.exe",
+            "args": ["your_task_data_here"],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build"
+        }
+    ]
+}
